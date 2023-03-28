@@ -1,0 +1,27 @@
+/* var foodOptions = document.querySelectorAll(".food-options input[type='checkbox']");
+var submitButton = document.getElementById("submit");
+var selectedItems = [];
+var templateParams = {
+  to_email: 'businessmanneel@gmail.com.com',
+  subject: 'Selected Dinner Options',
+  message_html: 'The following items were selected: ' + selectedItems.join(', ')
+};
+
+function sendEmail(){
+  emailjs.send("service_1o860hz", "template_r085sbq",tempelateParams)
+ 
+  .then(function(response) {
+      alert("Your order has been submitted. Thank you!");
+  }, function(error) {
+      alert("An error occurred while submitting your order. Please try again later.");
+  });
+}
+
+submitButton.addEventListener("click", function() {
+  for(var i = 0; i < foodOptions.length; i++) {
+      if(foodOptions[i].checked) {
+          selectedItems.push(foodOptions[i].value);
+      }
+  }
+  sendEmail();
+}); */

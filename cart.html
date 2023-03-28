@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+  </head>
+  <body>
+    <section class="cartHeader">
+      <nav><a href="index.html"><img src="images/logo.png" ></a></nav>
+      <h1>Selected Dinner Options</h1>
+      <div id="selected-option"></div>
+
+<script>
+  
+  document.getElementById("selected-option").innerHTML = option;
+</script>
+    </section>
+    <script>
+    var urlParams = new URLSearchParams(window.location.search);
+      var option = urlParams.get("option");    
+      document.getElementById("selected-option").innerHTML = option;
+
+var selectedOption = document.querySelector('input[name="option"]:checked').value;
+
+  console.log(option);
+  document.getElementById("selected-option").innerHTML = option;
+
+
+    </script>
+  </body>
+</html>

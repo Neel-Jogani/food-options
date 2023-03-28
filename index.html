@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Healthier Everyday</title>
+        <link rel= "stylesheet" type= "text/css" href= "style.css"/> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="header">
+          <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" ></a>
+                <div class="nav-links" id="navLinks">
+                    <img src="images/menu-icon.png" class="menu-icon-close" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <!-- <li><a href="about.html">ABOUT</a></li> -->
+                        <li><a href="dinner.html">DINNER</a></li>
+                        <li><a href="tiffin.html">TIFFIN</a></li>
+                    </ul>
+                    
+                </div>
+                <img src="images/menu-icon.png" onclick="showMenu()" class="menu-icon">
+            </nav>
+             <div class="text-box">
+                <h1>Vast amount of Choices to make</h1>
+                <p>A website made to make the choices of food easier for both the customer and the cook </p>
+                <a href="" class="hero-btn">Visit Us To Know More &#8669;</a>
+             </div>
+          </div>
+        </section>
+  
+        <section class="campus">
+            <h1>Food Options</h1>
+            <p> A lot of selections to choose from</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/salad.jpeg" >
+                    <div class="layer">
+                        <h3>SALADS</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                        <img src="images/indian-dishes.jpg" >
+                        <div class="layer">
+                            <h3>Indian Cuisine</h3>
+                        </div>
+                </div>
+                <div class="campus-col">
+                        <img src="images/fruits.jpg" >
+                        <div class="layer">
+                            <h3>Fruits</h3>
+                        </div>
+                 </div>
+             
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0"
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px"
+            }
+        </script>
+    </body>
+</html>
